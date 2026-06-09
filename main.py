@@ -43,7 +43,6 @@ def main_page(page: ft.Page):
         page.update()
 
     def on_sort(_):
-        # сортируем по имени (без учёта регистра)
         history.sort(key=lambda item: item['name'].lower())
         render_history()
         page.update()
